@@ -2,7 +2,6 @@ import "./CurriculoForm.css";
 import { useState, useRef, useEffect } from "react";
 import html2pdf from "html2pdf.js";
 import CurriculoPdf from "./CurriculoPdf";
-import { useGerarPdf } from "../hooks/useGerarPdf";
 
 const CurriculoForm = () => {
   const [nome, setNome] = useState("");
@@ -47,8 +46,6 @@ const CurriculoForm = () => {
       setLoading(false);
     });
   };
-
-  const {gerarPdf, loading:carregando} = useGerarPdf(conteudoRef);
 
   const handlePdf = () => {
 
@@ -160,8 +157,8 @@ const CurriculoForm = () => {
               const file = 
               setImageURL(URL.createObjectURL(e.target.files[0]))}}
           />
-           <button type="button" onClick={handlePdf} disabled={carregando}>
-            {carregando ? "Gerando PDF..." : "Baixar PDF"}
+           <button type="button" onClick={handlePdf}>
+            Baixar PDF
            </button>
         </label>
       </form>
