@@ -2,119 +2,107 @@
   position: fixed;
   top: -9999px;
   left: -9999px;
-  width: 210mm; 
+  width: 210mm;
   height: auto;
   overflow: hidden;
   pointer-events: none;
   visibility: hidden;
 }
 
-/* para deixar como tava apagar o dad_content, e muda a position do conteudo para relative */
 .conteudo {
-    width: 21cm;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    position: relative;
-    box-shadow: 1px 1px 60px rgb(182, 182, 182);
-  }
-  
-  /* Triângulo azul no topo */
-  .cabecalhoDecoracao {
-    width: 0;
-    height: 0;
-    border-left: 340px solid #4db8ff;
-    border-bottom: 270px solid transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-
-  /* Foto */
-  .foto {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin-top: 25px;
-    border: 5px solid white;
-    position: relative;
-    z-index: 2;
-    outline: none;
-    object-fit: cover;
+  width: 21cm;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  box-shadow: 1px 1px 60px rgb(182, 182, 182);
 }
-  
-  /* Nome e título */
-  .cabecalho {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: end;
-    text-align: right;
-    margin-right: 20px;
-    margin-top: -80px;
-    word-break: break-word;
-    gap: 0.3em;
-  }
 
-  .cabecalho h1,
-  .cabecalho p{
-    width: 60%;
-    /* display: flex;
+.cabecalhoDecoracao {
+  width: 0;
+  height: 0;
+  border-left: 340px solid #4db8ff;
+  border-bottom: 270px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.foto {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-top: 25px;
+  border: 5px solid white;
+  position: relative;
+  z-index: 2;
+  outline: none;
+  object-fit: cover;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: -80px;
+  word-break: break-word;
+  gap: 0.3em;
+}
+
+.cabecalho h1,
+.cabecalho p {
+  width: 60%;
+  /* display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end; */
-  }
+}
 
+.cabecalho h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
 
-  
-  .cabecalho h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  /* aqui é aonde vai ficar o email e as outras paradas */
-  .cabecalho p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-weight: normal;
-    color: #666;
-    font-size: 0.8em;
-    gap: 1em;
-  }
+.cabecalho p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: normal;
+  color: #666;
+  font-size: 0.8em;
+  gap: 1em;
+}
 
- 
+.secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin-top: 30px;
+  text-align: start;
+  page-break-inside: avoid;
+}
 
-  
-  /* Seções */
-  .secao {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-    margin-top: 30px;
-    text-align: start;
-    page-break-inside: avoid;
-  }
-  
-  .secao h3 {
-    font-size: 18px;
-    color: #000;
-    border-bottom: 2px solid #4db8ff;
-    padding-bottom: 4px;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .secao p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 14px;
-    line-height: 1.5;
-    max-width: 30vw;
-  }
+.secao h3 {
+  font-size: 18px;
+  color: #000;
+  border-bottom: 2px solid #4db8ff;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.secao p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 30vw;
+}
