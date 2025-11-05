@@ -181,7 +181,7 @@ const CurriculoForm = () => {
               <img className="foto" src={imageURL} alt="" />
 
               <div className="cabecalho">
-                <h1>{nome || "Seu Nome"}</h1>
+                <h1 id="name">{nome || "Seu Nome"}</h1>
                 <p>
                   {endereco || "Endereço "} <i class="fi fi-rr-marker"></i>
                 </p>

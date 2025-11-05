@@ -176,6 +176,11 @@ form button:hover {
 }
 
 @media (max-width: 1000px) {
+
+  #name {
+    width: 60%;
+  }
+
   .body {
     min-height: 0vh;
     flex-direction: column;
